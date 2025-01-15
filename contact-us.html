@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ferraez and Associates</title>
+	<link rel="stylesheet" href="fer-style.css">
+   	<link rel="icon" href="ferraez-site-images/fer-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.typekit.net/ant5xcw.css">
+</head>
+
+<body>
+	
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+		<a href="index.html">
+        <img src="ferraez-site-images/fer-logo-tert-w.png" alt="Logo">
+		</a>
+    </div>
+
+    <!-- Small Screen Slogan -->
+    <div class="center-image">
+        <img src="ferraez-site-images/fer-logo-prim-hero.png" alt="Slogan">
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">About</a></li>
+        <li class="nav-item"><a href="practice-areas.html">Practice Areas</a></li>
+        <li class="nav-item"><a href="contact-us.html" class= "active">Contact Us</a></li>
+    </ul>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/callcoryms"><img src="ferraez-site-images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/callcoryms/"><img src="ferraez-site-images/insta-icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/ferraez-associates-pllc"><img src="ferraez-site-images/linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
+</nav>
+	
+	<!-- Free Consultation Form Section -->
+<section class="consultation-form-section">
+    <h2>Request Your Free Consultation!</h2>
+    <p>Fill out the form below, and we’ll get back to you as soon as possible to schedule your free consultation.</p>
+    <form action="submit-consultation.php" method="POST" class="consultation-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        
+        <label for="date">Preferred Consultation Date</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="message">Tell Us About Your Case</label>
+        <textarea id="message" name="message" placeholder="Briefly describe your legal needs" rows="5" required></textarea>
+        
+        <button type="submit" class="cta-button">Schedule Now</button>
+    </form>
+</section>
+	
+	<!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ferraez and Associates. All Rights Reserved.</p>
+    </footer>
+</body>
+	
+</html>
