@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ferraez and Associates</title>
+	<link rel="stylesheet" href="fer-style.css">
+   	<link rel="icon" href="ferraez-site-images/fer-icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.typekit.net/ant5xcw.css">
+</head>
+
+<body class= "about page">
+	
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">
+		<a href="index.html">
+        <img src="ferraez-site-images/fer-logo-tert-w.png" alt="Logo">
+		</a>
+    </div>
+
+    <!-- Small Screen Slogan -->
+    <div class="center-image">
+        <img src="ferraez-site-images/fer-logo-prim-hero.png" alt="Slogan">
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class= "active">About</a></li>
+        <li class="nav-item"><a href="practice-areas.html">Practice Areas</a></li>
+        <li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/callcoryms"><img src="ferraez-site-images/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/callcoryms/"><img src="ferraez-site-images/insta-icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/ferraez-associates-pllc"><img src="ferraez-site-images/linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
+</nav>
+	
+	 <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="hero">
+    <img src="ferraez-site-images/fer-logo-prim-hero.png" alt="Logo" class="hero-logo">
+			<a href="contact-us.html"><button class="cta-button"><b>Free Consultation</b></button></a>
+</div>
+    </div>
+	
+	<!-- About Section -->
+	
+<section class="about-section">
+    <h2 class="fade-in">About Cory Ferraez</h2>
+    <div class="about-content">
+        <div class="about-image fade-in">
+            <img src="ferraez-site-images/fer-headshot.jpg" alt="Cory Ferraez">
+        </div>
+        <div class="about-text fade-in">
+            <p>Growing up in the charm of Columbus, Mississippi, Cory’s upbringing was steeped in tradition and refinement, influenced notably by his grandfather, who owned a renowned men’s clothing store. This upbringing instilled in him a sense of etiquette and sophistication that echoes in his personal, legal, and professional lives.</p>
+            <p>To help those that can’t help themselves is the bedrock with which Cory began his law career and the foundation on which he defends his clients. Tough and demanding are words that can be used to describe law in Mississippi – and that’s why he does it.
+			
+			Cory values friends above all else. In some instances, the bond of a friendship can be stronger than that of a family. Those bonds and a passion for helping others thrive is what his practice is made of, right here in Mississippi.</p>
+        </div>
+    </div>
+</section>
+	
+	<!-- Recognition Section -->
+<section class="recognition-section">
+    <h2>National Recogntion</h2>
+    <div class="recognition-cards">
+        <div class="card">
+			<p>Named <b>Top 40 Under 40</b> in 2018 by the Association of Trial Lawyers of America.</p>
+        </div>
+        <div class="card"> 
+            <p>Served as <b>President</b> of the Hattiesburg Area Young Lawyers Association.</p>
+        </div>
+    </div>
+</section>
+	
+	<!-- Testimonials Section -->
+	<section class="testimonials">
+  <h2>Real People, Real Stories, Real Impact.</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <img src="ferraez-site-images/person3.jpg" alt="John Doe" class="testimonial-image">
+      <p>"Cory truly listens, understands your pain, and then works with everything he’s got to get you the justice you deserve."</p>
+      <h3>- John Doe</h3>
+    </div>
+    <div class="testimonial-card">
+      <img src="ferraez-site-images/person1.jpg" alt="Jane Smith" class="testimonial-image">
+      <p>"Cory has been there for us every step of the way. He fought not just for the legal outcome we wanted, but for the peace of mind we desperately needed."</p>
+      <h3>- Jane Smith</h3>
+    </div>
+    <div class="testimonial-card">
+      <img src="ferraez-site-images/person2.jpg" alt="Mike Lee" class="testimonial-image">
+      <p>"Cory not only helped me navigate the legal system but also took the time to understand my situation and worked tirelessly to reduce the impact it had on my future."</p>
+      <h3>- Michael Lee</h3>
+    </div>
+  </div>
+</section>
+	
+	<!-- Fade-In Effect -->
+<script>
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); 
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.5 }); 
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+	
+	
+	<!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ferraez and Associates. All Rights Reserved.</p>
+    </footer>
+	
+	
+</body>
+	
+</html>
